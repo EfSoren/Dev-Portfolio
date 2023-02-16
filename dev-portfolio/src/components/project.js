@@ -6,8 +6,10 @@ import { Contact } from "./pages/contact";
 import { Nav } from "./nav";
 export function Project() {
   const [currentPage, setCurrentPage] = useState("Home");
+  const handlePageChange = (page) => setCurrentPage(page);
 
   const renderPage = () => {
+    console.log(currentPage);
     if (currentPage === "Home") {
       return <Home />;
     }
@@ -22,7 +24,6 @@ export function Project() {
     }
   };
 
-  const handlePageChange = (page) => setCurrentPage(page);
   return (
     <div>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />

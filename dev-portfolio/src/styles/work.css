@@ -11,47 +11,47 @@ p a {
   background-color: transparent;
 }
 
-.bio {
+.biog {
   display: flex;
-
+  background-color: transparent;
   justify-content: space-around;
   flex-direction: column;
 }
 
 @media (min-width: 600px) {
-  .bio-text {
+  .biog-text {
     margin-bottom: 2rem;
   }
 }
 
 @media (min-width: 992px) {
-  .bio {
+  .biog {
     align-items: center;
     justify-content: center;
     width: 90vw;
   }
-  .bio-text {
+  .biog-text {
     width: 90vw;
   }
 }
 
 @media (min-width: 1200px) {
-  .bio {
+  .biog {
     align-items: center;
     justify-content: center;
     width: 70vw;
   }
-  .bio-text {
+  .biog-text {
     width: 70vw;
   }
 }
 @media (min-width: 2000px) {
-  .bio {
+  .biog {
     align-items: center;
     justify-content: center;
     width: 70vw;
   }
-  .bio-text {
+  .biog-text {
     width: 45vw;
   }
 }

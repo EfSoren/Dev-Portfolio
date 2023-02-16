@@ -94,8 +94,9 @@ p {
     justify-content: space-around;
   }
   .bio {
-    width: 35vw;
+    width: 40vw;
     display: flex;
+    background-color: transparent;
     flex-direction: column;
     justify-content: space-around;
     height: 65vh;

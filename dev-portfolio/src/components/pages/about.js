@@ -1,26 +1,8 @@
 import "../../styles/about.css";
 import React from "react";
-export function About({ currentPage, handlePageChange }) {
+export function About() {
   return (
     <div className="home-body">
-      <nav>
-        <div className="nav-anchors">
-          <a href="#home" onClick={() => handlePageChange("Home")}>
-            Home
-          </a>
-          <a href="#about" onClick={() => handlePageChange("About")}>
-            About Me
-          </a>
-        </div>
-        <div className="nav-anchors">
-          <a href="#work" onClick={() => handlePageChange("Work")}>
-            My Work
-          </a>
-          <a href="#contact" onClick={() => handlePageChange("Contact")}>
-            Contact
-          </a>
-        </div>
-      </nav>
       <main className="about-cont">
         <section className="bio">
           <p>Hey there, my name is Ethan Sorensen.</p>
@@ -41,29 +23,29 @@ export function About({ currentPage, handlePageChange }) {
         </section>
         <section className="skills-list">
           <p className="skill-title">Skills</p>
-          <text className="list-skill">Front End</text>
+          <h5 className="list-skill">Front End</h5>
           <div className="skill-item skill-cont">
-            <text className="skill-item">HTML</text>
-            <text className="skill-item">CSS</text>
-            <text className="skill-item">JavaScript</text>
-            <text className="skill-item">React</text>
-            <text className="skill-item">PWA</text>
-            <text className="skill-item">BootStrap</text>
+            <h5 className="skill-item">HTML</h5>
+            <h5 className="skill-item">CSS</h5>
+            <h5 className="skill-item">JavaScript</h5>
+            <h5 className="skill-item">React</h5>
+            <h5 className="skill-item">PWA</h5>
+            <h5 className="skill-item">BootStrap</h5>
           </div>
-          <text className="list-skill">Back End</text>
+          <h5 className="list-skill">Back End</h5>
           <div className="skill-item skill-cont">
-            <text className="skill-item">Node</text>
-            <text className="skill-item">Express</text>
-            <text className="skill-item">MySQL</text>
-            <text className="skill-item">MongoDB</text>
-            <text className="skill-item">NoSql</text>
+            <h5 className="skill-item">Node</h5>
+            <h5 className="skill-item">Express</h5>
+            <h5 className="skill-item">MySQL</h5>
+            <h5 className="skill-item">MongoDB</h5>
+            <h5 className="skill-item">NoSql</h5>
           </div>
-          <text className="list-skill">Other Tech</text>
+          <h5 className="list-skill">Other Tech</h5>
           <div className="skill-item skill-cont">
-            <text className="skill-item">Insomnia</text>
-            <text className="skill-item">Postman</text>
-            <text className="skill-item">NPM</text>
-            <text className="skill-item">Jest</text>
+            <h5 className="skill-item">Insomnia</h5>
+            <h5 className="skill-item">Postman</h5>
+            <h5 className="skill-item">NPM</h5>
+            <h5 className="skill-item">Jest</h5>
           </div>
         </section>
       </main>
