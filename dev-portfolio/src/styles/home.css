@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  --main-bgc: #444045;
+  --nav-bgc: #9dff00;
+  --cont-bgc: #625d63;
+  background-color: #444045;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 150px;
+  background-color: var(--cont-bgc);
+  margin-bottom: 2rem;
+}
+nav a {
+  background-color: inherit;
+  text-decoration: none;
+  color: var(--cont-bgc);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke: 0.5px var(--nav-bgc);
+  font-size: 0px;
+  animation-name: zoom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+a:hover {
+  color: var(--nav-bgc);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  height: 3rem;
+  width: 70vw;
+  font-size: 0;
+  color: white;
+  background-color: transparent;
+  animation-name: bodyGen;
+  animation-duration: 0.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+h2 {
+  background-color: transparent;
+  animation-name: bodyGen;
+  animation-duration: 0.5s;
+  animation-delay: 3.75s;
+  animation-fill-mode: forwards;
+}
+h3 {
+  background-color: transparent;
+  animation-name: bodyGen;
+  animation-duration: 0.5s;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem; /* Footer height */
+}
+footer {
+  color: white;
+  text-align: center;
+  background-color: #2b282c;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+}
+.nav-anchors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: inherit;
+}
+.main-cont {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 0;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 25px;
+  animation-name: roll;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.btn-cont {
+  background-color: transparent;
+  display: flex;
+}
+.link-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: transparent;
+  margin: 10px;
+  text-align: center;
+  height: 35px;
+  width: 80px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: var(--cont-bgc);
+  -webkit-text-stroke: 0.5px var(--nav-bgc);
+  font-size: 0;
+  animation-name: buttonPull;
+  animation-duration: 0.5s;
+  animation-delay: 5.25s;
+  animation-fill-mode: forwards;
+}
+.link-btn:hover {
+  background-color: var(--nav-bgc);
+  color: black;
+  border: 3px solid black;
+}
+/* nav grow */
+@keyframes zoom {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 32px;
+  }
+}
+/* body dropout */
+@keyframes roll {
+  from {
+    height: 0;
+    background-color: var(--main-bgc);
+  }
+  to {
+    height: 70vh;
+    background-color: var(--cont-bgc);
+  }
+}
+
+/* Populate body */
+@keyframes bodyGen {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 24px;
+  }
+}
+
+@keyframes buttonPull {
+  from {
+    border: none;
+    font-size: 0;
+  }
+  to {
+    border: 1px solid var(--nav-bgc);
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h1,
+  h2,
+  h3 {
+    height: 5rem;
+    width: 85vw;
+  }
+  .link-btn {
+    height: 50px;
+    width: fit-content;
+  }
+  @keyframes zoom {
+    from {
+      font-size: 0;
+    }
+    to {
+      font-size: 44px;
+    }
+  }
+  @keyframes bodyGen {
+    from {
+      font-size: 0;
+    }
+    to {
+      font-size: 40px;
+    }
+  }
+  @keyframes buttonPull {
+    from {
+      border: none;
+      font-size: 0;
+    }
+    to {
+      border: 1px solid var(--nav-bgc);
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1,
+  h2,
+  h3 {
+    height: 7rem;
+    width: 95vw;
+  }
+  .link-btn {
+    height: 60px;
+    width: fit-content;
+  }
+  @keyframes zoom {
+    from {
+      font-size: 0;
+    }
+    to {
+      font-size: 44px;
+    }
+  }
+  @keyframes roll {
+    from {
+      height: 0;
+      background-color: var(--main-bgc);
+    }
+    to {
+      height: 500px;
+      background-color: var(--cont-bgc);
+    }
+  }
+  @keyframes bodyGen {
+    from {
+      font-size: 0;
+    }
+    to {
+      font-size: 4rem;
+    }
+  }
+  @keyframes buttonPull {
+    from {
+      border: none;
+      font-size: 0;
+    }
+    to {
+      border: 1px solid var(--nav-bgc);
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    height: 10vh;
+  }
+
+  .nav-anchors {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 30vw;
+  }
+  @keyframes roll {
+    from {
+      height: 0;
+      background-color: var(--main-bgc);
+    }
+    to {
+      height: 75vh;
+      background-color: var(--cont-bgc);
+    }
+  }
+
+  .link-btn {
+    padding: 0 1rem 0 1rem;
+  }
+}

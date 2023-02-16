@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  --main-bgc: #444045;
+  --nav-bgc: #9dff00;
+  --cont-bgc: #625d63;
+}
+
+.email-box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: transparent;
+}
+
+label {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cont-bgc);
+  -webkit-text-stroke: 0.5px var(--nav-bgc);
+  background-color: transparent;
+}
+
+input {
+  border: 2px solid var(--nav-bgc);
+}
+.form-box {
+  width: 80vw;
+  color: #9dff00;
+  height: 2rem;
+}
+.message-box {
+  width: 80vw;
+  color: #9dff00;
+  height: 8rem;
+}
+.send-box {
+  color: #9dff00;
+  width: 80vw;
+  height: 2rem;
+}
+@media (min-width: 1200px) {
+  .form-box {
+    width: 50vw;
+  }
+  .message-box {
+    width: 50vw;
+  }
+  .send-box {
+    width: 50vw;
+  }
+}
